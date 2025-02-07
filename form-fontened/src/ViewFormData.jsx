@@ -7,7 +7,7 @@ import { apiUrl } from './ApiUrl'
 export default function ViewFormData() {
     let [storeData, setStoreData] = useState([])
     let viewFormData = () => {
-        axios.get(`${apiUrl}/viewData`)
+        axios.get(`${apiUrl}viewData`)
             .then((res) => res.data)
             .then((finalRes) => {
                 setStoreData(finalRes);
